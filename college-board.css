@@ -1,0 +1,111 @@
+  body {
+    background-color: #181818;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background-color: #704cf0;
+    height: 80px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    padding: 20px;
+}
+
+input {
+    width: 500px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+}
+
+nav {
+    background-color: #202020;
+    width: 120px;
+    height: 100%;
+    position: fixed;
+    padding: 50px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    background-color: #333333;
+    border-radius: 15px 15px 15px 15px;
+}
+
+main {
+    margin-left: 240px;
+    padding: 30px;
+    background-color: #181818;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.video {
+    width: 280px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.thumbnail {
+    background-color: #ababab;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.video h3 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.video p {
+    color: #b3b3b3;
+    margin: 5px 0;
+}
+
+.video:hover {
+    transform: scale(1.05);
+    background-color: rgba(189, 189, 189, 0.419);
+    border-radius: 15px;
+}
+
+.video p {
+    color: #b3b3b3;
+    margin: 5px 0;
+}
+
+.video:hover {
+    transform: scale(1.05);
+    background-color: rgba(189, 189, 189, 0.419);
+    border-radius: 15px 15px 15px 15px;
+}
