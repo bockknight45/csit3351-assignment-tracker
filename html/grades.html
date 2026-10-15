@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grades</title>
+    <link rel="stylesheet" href="../css/college-board.css">
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <nav id="nav"></nav>
+
+    <main>
+
+        <h2>Grades</h2>
+
+        <section class="stats">
+            <div class="stat">
+                <p class="stat-number" id="averageGrade"></p>
+                <p>Average grade</p>
+            </div>
+            <div class="stat">
+                <p class="stat-number" id="gpa"></p>
+                <p>GPA</p>
+            </div>
+        </section>
+
+        <h3>Add Grade</h3>
+        <div class="add-form">
+            <select id="gradeClass"></select>
+            <input type="text" id="gradeName" placeholder="Name (Exam 1)"
+                onkeydown="pressEnter(event, addGrade)">
+            <input type="number" id="gradeScore" min="0" max="100" placeholder="Score (0-100)"
+                onkeydown="pressEnter(event, addGrade)">
+            <input type="number" id="gradeWeight" min="1" max="100" placeholder="Weight % (1-100)"
+                onkeydown="pressEnter(event, addGrade)">
+            <button onclick="addGrade()">Add Grade</button>
+        </div>
+
+        <div id="gradeList"></div>
+
+        <section class="calculator">
+            <h3>What do I need on the final?</h3>
+            <select id="calcClass" onchange="fillCurrentGrade()"></select>
+            <input type="number" id="calcCurrent" min="0" max="100" placeholder="Current grade %">
+            <input type="number" id="calcWeight" min="1" max="100" placeholder="Final weight %">
+            <input type="number" id="calcWanted" min="0" max="100" placeholder="Grade you want %">
+            <button onclick="calculateFinal()">Calculate</button>
+            <p class="result" id="calcResult"></p>
+        </section>
+
+    </main>
+
+    <script src="../js/grades.js"></script>
+
+</body>
+
+</html>
